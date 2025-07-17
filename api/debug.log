@@ -1,0 +1,20 @@
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+POST: Array
+(
+    [test_score] => 12
+)

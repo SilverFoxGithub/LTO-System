@@ -1,0 +1,1950 @@
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 26
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 26
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 26
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Progress saved!
+Next lesson 5 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 26
+    [role] => student
+)
+Lesson ID: 10
+Completion: 100
+Progress saved!
+Next lesson 11 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 29
+    [role] => student
+)
+Lesson ID: 3
+Completion: 100
+Progress saved!
+Next lesson 4 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 29
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Progress saved!
+Next lesson 5 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 29
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 29
+    [role] => student
+)
+Lesson ID: 6
+Completion: 100
+Progress saved!
+Next lesson 7 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 29
+    [role] => student
+)
+Lesson ID: 7
+Completion: 100
+Progress saved!
+Next lesson 8 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 29
+    [role] => student
+)
+Lesson ID: 8
+Completion: 100
+Progress saved!
+Next lesson 9 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 29
+    [role] => student
+)
+Lesson ID: 9
+Completion: 100
+Progress saved!
+Next lesson 10 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 29
+    [role] => student
+)
+Lesson ID: 10
+Completion: 100
+Progress saved!
+Next lesson 11 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 29
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 26
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 27
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 27
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 27
+    [role] => student
+)
+Lesson ID: 3
+Completion: 100
+Progress saved!
+Next lesson 4 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 27
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Progress saved!
+Next lesson 5 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 27
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 27
+    [role] => student
+)
+Lesson ID: 6
+Completion: 100
+Progress saved!
+Next lesson 7 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 3
+Completion: 100
+Progress saved!
+Next lesson 4 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Progress saved!
+Next lesson 5 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 7
+Completion: 100
+Progress saved!
+Next lesson 8 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 3
+Completion: 100
+Progress saved!
+Next lesson 4 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Progress saved!
+Next lesson 5 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 6
+Completion: 100
+Progress saved!
+Next lesson 7 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 7
+Completion: 100
+Progress saved!
+Next lesson 8 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 8
+Completion: 100
+Progress saved!
+Next lesson 9 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 9
+Completion: 100
+Progress saved!
+Next lesson 10 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 10
+Completion: 100
+Progress saved!
+Next lesson 11 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 30
+    [role] => student
+)
+Lesson ID: 6
+Completion: 100
+Progress saved!
+Next lesson 7 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 30
+    [role] => student
+)
+Lesson ID: 7
+Completion: 100
+Progress saved!
+Next lesson 8 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 30
+    [role] => student
+)
+Lesson ID: 8
+Completion: 100
+Progress saved!
+Next lesson 9 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 30
+    [role] => student
+)
+Lesson ID: 9
+Completion: 100
+Progress saved!
+Next lesson 10 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 30
+    [role] => student
+)
+Lesson ID: 10
+Completion: 100
+Progress saved!
+Next lesson 11 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 30
+    [role] => student
+)
+Lesson ID: 0
+Completion: 100
+Invalid lesson ID.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 30
+    [role] => student
+)
+Lesson ID: 0
+Completion: 100
+Invalid lesson ID.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 0
+Completion: 100
+Invalid lesson ID.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 11
+Completion: 100
+Progress saved!
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 20
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 3
+Completion: 100
+Progress saved!
+Next lesson 4 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Progress saved!
+Next lesson 5 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 6
+Completion: 100
+Progress saved!
+Next lesson 7 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 7
+Completion: 100
+Progress saved!
+Next lesson 8 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 8
+Completion: 100
+Progress saved!
+Next lesson 9 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 9
+Completion: 100
+Progress saved!
+Next lesson 10 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 10
+Completion: 100
+Progress saved!
+Next lesson 11 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 0
+Completion: 100
+Invalid lesson ID.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 11
+Completion: 100
+Progress saved!
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 34
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 34
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 34
+    [role] => student
+)
+Lesson ID: 3
+Completion: 100
+Progress saved!
+Next lesson 4 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 34
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Progress saved!
+Next lesson 5 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 34
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 34
+    [role] => student
+)
+Lesson ID: 6
+Completion: 100
+Progress saved!
+Next lesson 7 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 34
+    [role] => student
+)
+Lesson ID: 7
+Completion: 100
+Progress saved!
+Next lesson 8 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 34
+    [role] => student
+)
+Lesson ID: 8
+Completion: 100
+Progress saved!
+Next lesson 9 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 34
+    [role] => student
+)
+Lesson ID: 9
+Completion: 100
+Progress saved!
+Next lesson 10 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 34
+    [role] => student
+)
+Lesson ID: 10
+Completion: 100
+Progress saved!
+Next lesson 11 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 34
+    [role] => student
+)
+Lesson ID: 0
+Completion: 100
+Invalid lesson ID.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 34
+    [role] => student
+)
+Lesson ID: 11
+Completion: 100
+Progress saved!
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 35
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 35
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 35
+    [role] => student
+)
+Lesson ID: 3
+Completion: 100
+Progress saved!
+Next lesson 4 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 35
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Progress saved!
+Next lesson 5 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 35
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 35
+    [role] => student
+)
+Lesson ID: 6
+Completion: 100
+Progress saved!
+Next lesson 7 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 36
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 36
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 36
+    [role] => student
+)
+Lesson ID: 3
+Completion: 100
+Progress saved!
+Next lesson 4 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 36
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Progress saved!
+Next lesson 5 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 36
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 36
+    [role] => student
+)
+Lesson ID: 6
+Completion: 100
+Progress saved!
+Next lesson 7 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 36
+    [role] => student
+)
+Lesson ID: 7
+Completion: 100
+Progress saved!
+Next lesson 8 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 36
+    [role] => student
+)
+Lesson ID: 8
+Completion: 100
+Progress saved!
+Next lesson 9 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 36
+    [role] => student
+)
+Lesson ID: 9
+Completion: 100
+Progress saved!
+Next lesson 10 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 36
+    [role] => student
+)
+Lesson ID: 10
+Completion: 100
+Progress saved!
+Next lesson 11 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 36
+    [role] => student
+)
+Lesson ID: 0
+Completion: 100
+Invalid lesson ID.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 36
+    [role] => student
+)
+Lesson ID: 11
+Completion: 100
+Progress saved!
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 37
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 37
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 37
+    [role] => student
+)
+Lesson ID: 3
+Completion: 100
+Progress saved!
+Next lesson 4 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 37
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Progress saved!
+Next lesson 5 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 37
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 37
+    [role] => student
+)
+Lesson ID: 6
+Completion: 100
+Progress saved!
+Next lesson 7 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 38
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 38
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 38
+    [role] => student
+)
+Lesson ID: 3
+Completion: 100
+Progress saved!
+Next lesson 4 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 38
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Progress saved!
+Next lesson 5 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 38
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 3
+Completion: 100
+Progress saved!
+Next lesson 4 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Progress saved!
+Next lesson 5 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 26
+    [role] => student
+)
+Lesson ID: 10
+Completion: 100
+Progress saved!
+Next lesson 11 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 26
+    [role] => student
+)
+Lesson ID: 0
+Completion: 100
+Invalid lesson ID.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 26
+    [role] => student
+)
+Lesson ID: 11
+Completion: 100
+Progress saved!
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 3
+Completion: 100
+Progress saved!
+Next lesson 4 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Progress saved!
+Next lesson 5 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 6
+Completion: 100
+Progress saved!
+Next lesson 7 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 6
+Completion: 100
+Progress saved!
+Next lesson 7 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 3
+Completion: 100
+Progress saved!
+Next lesson 4 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Progress saved!
+Next lesson 5 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 31
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 3
+Completion: 100
+Progress saved!
+Next lesson 4 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Progress saved!
+Next lesson 5 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 0
+Completion: 100
+Invalid lesson ID.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 6
+Completion: 100
+Progress saved!
+Next lesson 7 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 7
+Completion: 100
+Progress saved!
+Next lesson 8 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 8
+Completion: 100
+Progress saved!
+Next lesson 9 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 9
+Completion: 100
+Progress saved!
+Next lesson 10 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 10
+Completion: 100
+Progress saved!
+Next lesson 11 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 0
+Completion: 100
+Invalid lesson ID.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 0
+Completion: 100
+Invalid lesson ID.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 0
+Completion: 100
+Invalid lesson ID.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 0
+Completion: 100
+Invalid lesson ID.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 19
+    [role] => student
+)
+Lesson ID: 11
+Completion: 100
+Progress saved!
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 40
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 40
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 40
+    [role] => student
+)
+Lesson ID: 3
+Completion: 100
+Progress saved!
+Next lesson 4 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 40
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Progress saved!
+Next lesson 5 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 40
+    [role] => student
+)
+Lesson ID: 0
+Completion: 100
+Invalid lesson ID.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 40
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 40
+    [role] => student
+)
+Lesson ID: 6
+Completion: 100
+Progress saved!
+Next lesson 7 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 40
+    [role] => student
+)
+Lesson ID: 6
+Completion: 100
+Progress saved!
+Next lesson 7 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Score: 
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Score: 
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Score: 
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 3
+Completion: 100
+Score: 
+Progress saved!
+Next lesson 4 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Score: 
+Progress saved!
+Next lesson 5 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 5
+Completion: 100
+Score: 
+Progress saved!
+Next lesson 6 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: undefined
+Completion: 100
+Score: 
+=== NEW REQUEST ===
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Test Score: 12
+=== NEW REQUEST ===
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+Test Score: 12
+=== NEW REQUEST ===
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+Test Score: 12
+=== NEW REQUEST ===
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+Test Score: 12
+=== NEW REQUEST ===
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+Test Score: 12
+=== NEW REQUEST ===
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+Test Score: 12
+=== NEW REQUEST ===
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+User not logged in.
+=== NEW REQUEST ===
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+Test Score: 11
+=== NEW REQUEST ===
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+Test Score: 12
+=== NEW REQUEST ===
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+Test Score: 12
+=== NEW REQUEST === 2025-07-07 19:03:40 ===
+PHP Version: 8.2.4
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+GET: Array
+(
+)
+
+POST: Array
+(
+    [test_score] => 13
+)
+
+ERROR: $pdo is not defined or not an object.
+=== NEW REQUEST === 2025-07-07 19:05:32 ===
+PHP Version: 8.2.4
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+GET: Array
+(
+)
+
+POST: Array
+(
+    [test_score] => 12
+)
+
+ERROR: $pdo is not defined or not an object.
+=== NEW REQUEST ===
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+Test Score: 12
+=== NEW REQUEST ===
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+Test Score: 12
+=== NEW REQUEST === 2025-07-07 19:13:39 ===
+PHP Version: 8.2.4
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+GET: Array
+(
+)
+
+POST: Array
+(
+    [test_score] => 11
+)
+
+Test Score: 11
+Score saved successfully!
+=== NEW REQUEST === 2025-07-07 19:15:00 ===
+PHP Version: 8.2.4
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+GET: Array
+(
+)
+
+POST: Array
+(
+    [test_score] => 12
+)
+
+Test Score: 12
+Score saved successfully!
+=== NEW REQUEST === 2025-07-07 19:18:35 ===
+PHP Version: 8.2.4
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+GET: Array
+(
+)
+
+POST: Array
+(
+    [test_score] => 12
+)
+
+Test Score: 12
+Score saved successfully!
+=== NEW REQUEST === 2025-07-07 19:20:05 ===
+PHP Version: 8.2.4
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+GET: Array
+(
+)
+
+POST: Array
+(
+    [test_score] => 17
+)
+
+Test Score: 17
+Score saved successfully!
+=== NEW REQUEST === 2025-07-07 19:23:07 ===
+PHP Version: 8.2.4
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+GET: Array
+(
+)
+
+POST: Array
+(
+    [test_score] => 14
+)
+
+Test Score: 14
+Score saved successfully!
+=== NEW REQUEST === 2025-07-07 19:28:08 ===
+PHP Version: 8.2.4
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+GET: Array
+(
+)
+
+POST: Array
+(
+    [test_score] => 30
+)
+
+Test Score: 30
+Score saved successfully!
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 6
+Completion: 100
+Progress saved!
+Next lesson 7 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 7
+Completion: 100
+Progress saved!
+Next lesson 8 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 8
+Completion: 100
+Progress saved!
+Next lesson 9 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 9
+Completion: 100
+Progress saved!
+Next lesson 10 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 32
+    [role] => student
+)
+Lesson ID: 10
+Completion: 100
+Progress saved!
+Next lesson 11 unlocked.
+=== NEW REQUEST === 2025-07-07 19:36:39 ===
+PHP Version: 8.2.4
+Session: Array
+(
+    [user_id] => 32
+    [role] => student
+)
+
+GET: Array
+(
+)
+
+POST: Array
+(
+    [test_score] => 50
+)
+
+Test Score: 50
+Score saved successfully!
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 35
+    [role] => admin
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 37
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 37
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 39
+    [role] => student
+)
+Lesson ID: 1
+Completion: 100
+Progress saved!
+Next lesson 2 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 39
+    [role] => student
+)
+Lesson ID: 2
+Completion: 100
+Progress saved!
+Next lesson 3 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 39
+    [role] => student
+)
+Lesson ID: 3
+Completion: 100
+Progress saved!
+Next lesson 4 unlocked.
+=== NEW REQUEST ===
+Array
+(
+    [user_id] => 39
+    [role] => student
+)
+Lesson ID: 4
+Completion: 100
+Progress saved!
+Next lesson 5 unlocked.
