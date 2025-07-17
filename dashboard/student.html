@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="../assets/styles/student-dash.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <button class="nav-button" onclick="goToProgress()">View Certificate</button>
+            <button class="nav-button" onclick="goToPayment()">Payment</button>
+            <button class="nav-button" onclick="goToChatbot()">Ask AI</button>
+            <button class="nav-button logout" onclick="logout()">Logout</button>
+            <div class="logo">
+                <img src="../assets/logo.png" alt="MSSB Logo">
+            </div>
+        </nav>
+        <div class="dashboard-content">
+            <div class="left-panel">
+                <div class="progress-check">
+                    <h2>Progress Check</h2>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill">0%</div>
+                    </div>
+                </div>
+                <div class="theoretical-course">
+                    <h2>Theoretical Driving Course</h2>
+                    <div class="day-container">
+                        <div class="day">
+                            <h3>Day 1</h3>
+                            <div class="lesson-buttons">
+                                <button class="lesson-button" onclick="openLesson('introduction.html')" id="lesson1">Introduction</button>
+                                <button class="lesson-button locked" onclick="openLesson('road_traffic_rules.html')" id="lesson2" disabled>Road and Traffic Rules</button>
+                                <button class="lesson-button locked" onclick="openLesson('motorcycle.html')" id="lesson3" disabled>Student AA1 (Motorcycle)</button>
+                                <button class="lesson-button locked" onclick="openLesson('motor_vehicle.html')" id="lesson4" disabled>Student BB1 / B2 (Motor Vehicle)</button>
+<button class="lesson-button locked" onclick="confirmAndOpenTest('day1_test1.html')" id="lesson5" disabled>Day 1 Assessment Test (Part 1)</button>
+<button class="lesson-button locked" onclick="confirmAndOpenTest('day1_test2.html')" id="lesson6" disabled>Day 1 Assessment Test (Part 2)</button>
+                            </div>
+                        </div>
+                        <div class="day">
+                            <h3>Day 2</h3>
+                            <div class="lesson-buttons">
+                                <button class="lesson-button locked" onclick="openLesson('defensive_driving.html')" id="lesson7" disabled>Defensive Driving</button>
+                                <button class="lesson-button locked" onclick="openLesson('emergencies.html')" id="lesson8" disabled>Handling Emergencies</button>
+                                <button class="lesson-button locked" onclick="openLesson('special_laws.html')" id="lesson9" disabled>Special Laws</button>
+                                <button class="lesson-button locked" onclick="openLesson('active_transport.html')" id="lesson10" disabled>GAD and Active Transport</button>
+<button class="lesson-button locked" onclick="confirmAndOpenTest('final_test.html')" id="lesson11" disabled>Final Assessment Test</button>
+                            </div>
+                            <div id="waitingMessage" style="color: #00897b; margin-top: 10px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-panel news-section">
+                <h3>📰 Driving & Traffic News</h3>
+                <div id="newsContainer"></div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/student.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("../api/get_progress.php")
+            .then(response => response.json())
+            .then(progressData => {
+                updateProgressUI(progressData);
+            })
+            .catch(error => console.error("Error fetching progress:", error));
+    });
+
+    function updateProgressUI(progressData) {
+        const totalLessons = 11;
+        const completedLessons = progressData.completedLessons.length;
+        
+        // Clamp progress to 100 max
+        let progressPercentage = Math.min(progressData.progress, 100);
+
+        // Update progress bar
+        const progressFill = document.getElementById("progressFill");
+        progressFill.style.width = progressPercentage + "%";
+        progressFill.textContent = Math.round(progressPercentage) + "%";
+
+        // Check waiting period for lesson 6
+        const waitingMessageDiv = document.getElementById("waitingMessage");
+        const lesson7Button = document.getElementById("lesson7");
+        const completionTimeKey = "lesson_6_completion_time";
+        const oneDayInMs = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+        let isWaiting = false;
+
+        if (progressData.completedLessons.includes(6)) {
+            const completionTime = localStorage.getItem(completionTimeKey);
+            if (completionTime) {
+                const updateWaitingMessage = () => {
+                    const now = Date.now();
+                    const timeElapsed = now - parseInt(completionTime);
+                    const timeRemaining = oneDayInMs - timeElapsed;
+                    if (timeRemaining > 0) {
+                        isWaiting = true;
+                        const hoursRemaining = Math.floor(timeRemaining / (60 * 60 * 1000));
+                        const minutesRemaining = Math.floor((timeRemaining % (60 * 60 * 1000)) / (60 * 1000));
+                        const secondsRemaining = Math.floor((timeRemaining % (60 * 1000)) / 1000);
+                        waitingMessageDiv.textContent = `Please wait ${hoursRemaining} hour(s), ${minutesRemaining} minute(s), and ${secondsRemaining} second(s) to unlock Day 2.`;
+                    } else {
+                        isWaiting = false;
+                        waitingMessageDiv.textContent = "";
+                        if (progressData.next_lesson_id === 7) {
+                            lesson7Button.classList.remove("locked");
+                            lesson7Button.disabled = false;
+                        }
+                        clearInterval(timer);
+                    }
+                };
+                updateWaitingMessage(); // Initial call
+                const timer = setInterval(updateWaitingMessage, 1000); // Update every second
+            }
+        }
+
+        // Unlock completed lessons
+        progressData.completedLessons.forEach(lessonId => {
+            const lessonButton = document.getElementById(`lesson${lessonId}`);
+            if (lessonButton) {
+                lessonButton.classList.remove("locked");
+                lessonButton.disabled = false;
+            }
+        });
+
+        // Unlock next lesson (if any and not waiting)
+        if (progressData.next_lesson_id && !isWaiting) {
+            const nextLessonButton = document.getElementById(`lesson${progressData.next_lesson_id}`);
+            if (nextLessonButton) {
+                nextLessonButton.classList.remove("locked");
+                nextLessonButton.disabled = false;
+            }
+        }
+    }
+
+    function openLesson(lessonPage) {
+        window.location.href = lessonPage;
+    }
+    </script>
+    <script>
+    const NEWS_PAGE_SIZE = 10;
+    let currentPage = 1;
+    let articles = [];
+
+    const GNEWS_API_KEY = "77cd34d8e039be5aaf4d111a8085f761";
+    const BASE_URL = "https://gnews.io/api/v4/search";
+
+    const ALLOWED_KEYWORDS = [
+      "driving", "driver", "traffic", "LTO", "road", "highway", "accident",
+      "car", "vehicle", "transport", "motorcycle", "pedestrian", "bus", "jeepney"
+    ];
+
+    function isRelevantArticle(article) {
+      const text = `${article.title} ${article.description}`.toLowerCase();
+      return ALLOWED_KEYWORDS.some(keyword => text.includes(keyword));
+    }
+
+    async function loadDrivingNews(page = 1) {
+      const container = document.getElementById("newsContainer");
+      container.innerHTML = "<div class='news-item'><h4>Loading...</h4></div>";
+
+      const query = "driving OR traffic OR LTO OR vehicle OR road";
+      const url = `${BASE_URL}?q=${encodeURIComponent(query)}&lang=en&country=ph&max=30&token=${GNEWS_API_KEY}`;
+
+      try {
+        const res = await fetch(url);
+        const data = await res.json();
+        if (!data.articles) throw new Error("No articles");
+
+        articles = data.articles.filter(isRelevantArticle);
+        localStorage.setItem("news_cache", JSON.stringify(articles));
+        renderNewsPage();
+      } catch (err) {
+        console.error("News fetch error:", err);
+        const cache = localStorage.getItem("news_cache");
+        if (cache) {
+          articles = JSON.parse(cache).filter(isRelevantArticle);
+          renderNewsPage(true);
+        } else {
+          container.innerHTML = "<div class='news-item'><h4>Offline. No cached news.</h4></div>";
+        }
+      }
+    }
+
+    function renderNewsPage(isOffline = false) {
+      const container = document.getElementById("newsContainer");
+      container.innerHTML = "";
+
+      const start = (currentPage - 1) * NEWS_PAGE_SIZE;
+      const pageArticles = articles.slice(start, start + NEWS_PAGE_SIZE);
+
+      if (pageArticles.length === 0) {
+        container.innerHTML = "<div class='news-item'><h4>No recent traffic or driving news found.</h4></div>";
+        return;
+      }
+
+      pageArticles.forEach(article => {
+        const item = document.createElement("div");
+        item.className = "news-item";
+        item.innerHTML = `
+          <h4><a href="${article.url}" target="_blank">${article.title}</a></h4>
+          <small style="color: #666; font-style: italic;">Source: ${article.source?.name || 'Unknown'}</small>
+          <p>${article.description || ''}</p>
+          ${isOffline ? '<em>(Offline cache)</em>' : ''}
+        `;
+        container.appendChild(item);
+      });
+
+      const controls = document.createElement("div");
+      controls.style.textAlign = 'center';
+      controls.innerHTML = `
+        <button ${currentPage === 1 ? 'disabled' : ''} onclick="prevPage()">Prev</button>
+        <span>Page ${currentPage}</span>
+        <button ${articles.length <= currentPage * NEWS_PAGE_SIZE ? 'disabled' : ''} onclick="nextPage()">Next</button>
+      `;
+      container.appendChild(controls);
+    }
+
+    function prevPage() {
+      if (currentPage > 1) {
+        currentPage--;
+        renderNewsPage();
+      }
+    }
+
+    function nextPage() {
+      if (articles.length > currentPage * NEWS_PAGE_SIZE) {
+        currentPage++;
+        renderNewsPage();
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      loadDrivingNews();
+    });
+    
+    </script>
+
+    <script>
+function confirmAndOpenTest(lessonPage) {
+  const confirmed = confirm("Are you sure you want to begin this test?\nYou may not be able to return or retry.");
+  if (confirmed) {
+    window.location.href = lessonPage;
+  }
+}
+</script>
+
+</body>
+</html>

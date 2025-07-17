@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #e0f2f1);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      padding: 24px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 24px;
+      color: #00695c;
+    }
+
+    .tabs {
+      display: flex;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .tab {
+      flex: 1;
+      padding: 10px 0;
+      text-align: center;
+      background-color: #e0e0e0;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .tab.active {
+      background-color: #00897b;
+      color: #fff;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px 10px;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input[type="number"],
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #00897b;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 12px;
+    }
+
+    button:hover {
+      background-color: #00695c;
+    }
+
+    .qr-image {
+      display: block;
+      margin: 0 auto 16px;
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      cursor: pointer;
+    }
+
+    .address-box {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+      border: 2px dashed #ccc;
+      padding: 40px 10px;
+      border-radius: 12px;
+      background-color: #f9f9f9;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 16px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      .qr-image {
+        width: 80px;
+        height: 80px;
+      }
+
+      .address-box {
+        font-size: 1rem;
+        padding: 30px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>PAYMENT</h1>
+
+    <div class="tabs">
+      <div class="tab active" onclick="showTab('bdo')">BDO</div>
+      <div class="tab" onclick="showTab('gcash')">GCash</div>
+      <div class="tab" onclick="showTab('cash')">Cash</div>
+    </div>
+
+    <!-- BDO -->
+    <div class="tab-content active" id="bdo-tab">
+      <img src="../assets/QR.png" alt="QR Code" class="qr-image" />
+
+      <div class="form-group">
+        <label for="bdo-amount">Amount</label>
+        <input type="number" id="bdo-amount" placeholder="Enter amount" />
+      </div>
+
+      <div class="form-group">
+        <label for="bdo-receipt">Receipt</label>
+        <input type="file" id="bdo-receipt" accept="image/*" />
+      </div>
+
+      <button onclick="submitPayment('bdo')">Done</button>
+    </div>
+
+    <!-- GCash -->
+    <div class="tab-content" id="gcash-tab">
+      <img src="../assets/QR.png" alt="QR Code" class="qr-image" />
+
+      <div class="form-group">
+        <label for="gcash-amount">Amount</label>
+        <input type="number" id="gcash-amount" placeholder="Enter amount" />
+      </div>
+
+      <div class="form-group">
+        <label for="gcash-receipt">Receipt</label>
+        <input type="file" id="gcash-receipt" accept="image/*" />
+      </div>
+
+      <button onclick="submitPayment('gcash')">Done</button>
+    </div>
+
+    <!-- Cash -->
+    <div class="tab-content" id="cash-tab">
+      <div class="address-box">
+        LAGAY KA NA LANG NG ADDRESS
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showTab(tabName) {
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.tab-content');
+
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+        if (tab.textContent.toLowerCase() === tabName) {
+          tab.classList.add('active');
+        }
+      });
+
+      contents.forEach(content => {
+        content.classList.remove('active');
+      });
+
+      const activeTab = document.getElementById(`${tabName}-tab`);
+      if (activeTab) activeTab.classList.add('active');
+    }
+
+    function submitPayment(type) {
+      const amount = document.getElementById(`${type}-amount`)?.value;
+      const receipt = document.getElementById(`${type}-receipt`)?.files[0];
+
+      if (!amount || !receipt) {
+        alert("Please enter amount and upload receipt.");
+        return;
+      }
+
+      alert(`${type.toUpperCase()} payment submitted successfully.`);
+    }
+  </script>
+
+</body>
+</html>
