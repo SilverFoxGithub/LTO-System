@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Congratulations!</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+      color: white;
+      text-align: center;
+    }
+
+    .congrats-container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 50px 30px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      animation: popIn 1.2s ease;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .logo {
+      width: 100px;
+      animation: dropIn 1.5s ease;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      animation: fadeInUp 1.6s ease;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      animation: fadeInUp 1.8s ease;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background: #fff;
+      color: #0077ff;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      animation: fadeInUp 2s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:hover {
+      background: #0077ff;
+      color: white;
+      transform: scale(1.05);
+      box-shadow: 0 6px 25px rgba(0, 119, 255, 0.4);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes popIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.6);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes dropIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Confetti Canvas */
+    canvas#confetti {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="confetti"></canvas>
+
+  <div class="congrats-container">
+    <!-- ✅ MSSB Logo -->
+    <img src="assets/logo.png" alt="MSSB Logo" class="logo" />
+
+    <!-- ✅ Heading -->
+    <h1>🎉 Congratulations! 🎉</h1>
+
+    <!-- ✅ Message -->
+    <p>You have successfully completed the Theoretical Driving Course.</p>
+    <p>Great job on finishing all the lessons and assessments!</p>
+
+    <!-- ✅ Button -->
+    <a href="dashboard\student.html" class="btn">Back to Dashboard</a>
+  </div>
+
+  <script>
+    // ✅ Fireworks pop-up message
+    // document.addEventListener("DOMContentLoaded", function () {
+    //   setTimeout(() => {
+    //     alert("Congratulations on completing the course! 🚗🎉");
+    //   }, 1000);
+    // });
+
+    // ✅ Confetti animation
+    const canvas = document.getElementById("confetti");
+    const ctx = canvas.getContext("2d");
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    let pieces = [];
+    const numberOfPieces = 150;
+
+    function randomColor() {
+      const colors = ["#ffffff", "#ffeb3b", "#4caf50", "#2196f3", "#f44336", "#e91e63"];
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    function createConfetti() {
+      for (let i = 0; i < numberOfPieces; i++) {
+        pieces.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height - canvas.height,
+          radius: Math.random() * 6 + 4,
+          density: Math.random() * numberOfPieces,
+          color: randomColor(),
+          tilt: Math.floor(Math.random() * 10) - 10,
+          tiltAngleIncremental: Math.random() * 0.07 + 0.05,
+          tiltAngle: 0
+        });
+      }
+    }
+
+    function drawConfetti() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      pieces.forEach((p, i) => {
+        ctx.beginPath();
+        ctx.lineWidth = p.radius;
+        ctx.strokeStyle = p.color;
+        ctx.moveTo(p.x + p.tilt + p.radius / 2, p.y);
+        ctx.lineTo(p.x + p.tilt, p.y + p.tilt + p.radius / 2);
+        ctx.stroke();
+      });
+
+      updateConfetti();
+    }
+
+    function updateConfetti() {
+      pieces.forEach((p, i) => {
+        p.tiltAngle += p.tiltAngleIncremental;
+        p.y += (Math.cos(p.density) + 3 + p.radius / 2) / 2;
+        p.tilt = Math.sin(p.tiltAngle - i / 3) * 15;
+
+        if (p.y > canvas.height) {
+          p.x = Math.random() * canvas.width;
+          p.y = -20;
+        }
+      });
+    }
+
+    function animateConfetti() {
+      drawConfetti();
+      requestAnimationFrame(animateConfetti);
+    }
+
+    createConfetti();
+    animateConfetti();
+
+    window.addEventListener("resize", () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+  </script>
+</body>
+</html>

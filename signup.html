@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup - MSSB Driving Institute</title>
+
+    <!-- Font Icon -->
+    <link
+      rel="stylesheet"
+      href="assets/signup_stuff/fonts/material-icon/css/material-design-iconic-font.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/styles/signup-style.css" />
+  </head>
+  <style>
+    #otp-note {
+      display: none;
+      margin-top: 10px;
+      padding: 12px;
+      border: 1px solid #cdeac0;
+      border-radius: 6px;
+      color: #4b6043;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    .otp-wrapper {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+      align-items: center;
+    }
+
+    .otp-wrapper input {
+      flex: 1;
+      padding: 10px;
+    }
+
+    input[type="checkbox"] {
+  display: inline-block !important;
+  width: auto;
+}
+#termsModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+}
+
+#termsModal .modal-content {
+  background: #fff;
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+#termsModal h2 {
+  font-size: 24px;
+  color: #00796b;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#termsModal p {
+  max-height: 300px;
+  overflow-y: auto;
+  line-height: 1.6;
+  color: #444;
+  font-size: 15px;
+  padding-right: 10px;
+}
+
+#termsModal button {
+  margin-top: 20px;
+  padding: 10px 24px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#termsModal button:hover {
+  background-color: #004d40;
+}
+
+/* Scrollbar customization (optional) */
+#termsModal p::-webkit-scrollbar {
+  width: 6px;
+}
+
+#termsModal p::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="signup-content">
+          <div class="signup-form">
+            <h2 class="form-title">Sign up</h2>
+            <!-- <form method="POST" class="register-form" id="register-form"> -->
+              <div class="form-group">
+                <label for="name"
+                  ><i class="zmdi zmdi-account material-icons-name"></i
+                ></label>
+                <input type="text" id="full-name" placeholder="Full Name" />
+              </div>
+              <div class="form-group">
+                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                <input type="email" id="email" placeholder="Email" />
+              </div>
+              <div class="form-group">
+                <label for="OTP"><i class="zmdi"></i></label>
+                <input type="text" id="otp" placeholder="Enter OTP" required />
+                <button id="send-otp">Send OTP</button>
+                <p id="otp-note">
+                  Note: If you did not receive the OTP, please check your spam
+                  folder.
+                </p>
+              </div>
+              <div class="form-group">
+                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                <input type="password" id="password" placeholder="Password" />
+              </div>
+              <div class="form-group">
+                <label for="re-pass"
+                  ><i class="zmdi zmdi-lock-outline"></i
+                ></label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  placeholder="Confirm Password" />
+                <p id="password-strength"></p>
+              </div>
+
+              <div class="form-group">
+                <select id="role" required>
+                  <option value="">Select Role</option>
+                  <option value="student">Student</option>
+                  <option value="instructor">Instructor</option>
+                  <option value="admin">Admin</option>
+                </select>
+              </div>
+              <div class="form-group">
+              <input type="checkbox" id="agree-terms" />
+              <label for="agree-terms">
+                I agree to the <a href="#" id="open-terms-link">Terms of Service</a>
+              </label>
+            </div>
+              <div class="form-group form-button">
+                <button id="signup-btn">Signup</button>
+              </div>
+            <!-- </form> -->
+          </div>
+          <div class="signup-image">
+            <figure>
+              <img
+                src="assets/logo.png"
+                alt="MSSB Driving Institute Logo"
+                class="logo" />
+            </figure>
+            <a href="index.html" class="signup-image-link"
+              >I am already member</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="termsModal" style="display: none; position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); z-index: 1000;">
+  <div style="background: white; max-width: 600px; margin: 80px auto; padding: 24px;
+    border-radius: 10px; position: relative;">
+    <h2>Terms of Service</h2>
+    <p style="max-height: 300px; overflow-y: auto;">
+      By registering for MSSB Driving Institute, you agree to comply with all school policies,
+      behave respectfully, and acknowledge that your progress may be monitored by the admin/instructor.
+      MSSB reserves the right to suspend access for violations. Personal data is stored securely and will
+      not be shared outside MSSB without your consent.
+    </p>
+    <button onclick="closeTerms()" style="margin-top: 20px; padding: 10px 20px;">Close</button>
+  </div>
+</div>
+
+
+    <!-- JS -->
+    <script src="assets/signup_stuff/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/signup_stuff/js/main.js"></script>
+
+    <script src="assets/signup.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Show OTP note
+    document.getElementById("send-otp").addEventListener("click", function () {
+      document.getElementById("otp-note").style.display = "block";
+    });
+
+    // Disable signup until terms are agreed
+    const signupBtn = document.getElementById("signup-btn");
+    const termsCheckbox = document.getElementById("agree-terms");
+    signupBtn.disabled = true;
+
+    termsCheckbox.addEventListener("change", function () {
+      signupBtn.disabled = !this.checked;
+    });
+
+    // TOS Modal logic
+    document.getElementById("open-terms-link").addEventListener("click", function (e) {
+      e.preventDefault();
+      document.getElementById("termsModal").style.display = "block";
+    });
+
+    window.closeTerms = function () {
+      document.getElementById("termsModal").style.display = "none";
+    };
+
+    // Handle Signup button
+    signupBtn.addEventListener("click", function () {
+      const fullName = document.getElementById("full-name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirm-password").value;
+
+      if (!fullName || !email || !password || password !== confirmPassword) {
+        alert("❌ Please fill in all fields correctly.");
+        return;
+      }
+
+      alert("✅ Signup successful!");
+      window.location.href = "index.html";
+    });
+  });
+</script>
+
+
+  </body>
+</html>
