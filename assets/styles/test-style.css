@@ -1,0 +1,140 @@
+/* Base and Typography */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Container */
+.test-container {
+  max-width: 850px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.test-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.75rem;
+  color: #00796b;
+}
+
+/* Question Block */
+.question {
+  margin-bottom: 25px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.question p {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Radio Buttons */
+.question label {
+  display: block;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-left 0.2s ease;
+  border-left: 4px solid transparent;
+}
+
+.question input[type="radio"] {
+  margin-right: 10px;
+}
+
+.question label:hover {
+  background-color: #e0f7fa;
+}
+
+.question input[type="radio"]:checked + label {
+  border-left: 4px solid #00796b;
+  background-color: #e0f2f1;
+}
+
+/* Buttons */
+button,
+.dashboard-button,
+.complete-button,
+.next-button {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 15px 10px 0 0;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn {
+  background-color: #00897b;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #00796b;
+}
+
+.dashboard-button {
+  background-color: #b0bec5;
+  color: white;
+}
+
+.dashboard-button:hover {
+  background-color: #90a4ae;
+}
+
+.complete-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.complete-button:hover {
+  background-color: #388e3c;
+}
+
+.next-button {
+  text-decoration: none;
+  background-color: #1976d2;
+  color: white;
+}
+
+.next-button:hover {
+  background-color: #1565c0;
+}
+
+/* Results Section */
+#results {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #00796b;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .test-container {
+    padding: 20px;
+  }
+
+  button,
+  .dashboard-button,
+  .complete-button,
+  .next-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

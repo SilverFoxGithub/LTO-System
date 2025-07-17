@@ -1,0 +1,629 @@
+/* General Page Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f7f0;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+      width: 220px;
+      background-color: #00897b;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sidebar-top {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar h2 {
+      font-size: 20px;
+    }
+
+    .sidebar button {
+      background-color: #004d40;
+      border: none;
+      color: white;
+      padding: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .sidebar button:hover {
+      background-color: #00332d;
+    }
+    .sidebar-top img {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  display: block;
+}
+
+#logoutBtn {
+  background-color: #ffffff;
+  color: #00897b;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #ffffff;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 26px;
+  color: #00897b;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background-color: #e0f2f1;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Buttons */
+.actions {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#addUserBtn {
+  background-color: #4CAF50;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#addUserBtn:hover {
+  background-color: #43a047;
+}
+
+.upload-cert,
+.view-cert {
+  background-color: #118fd2;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.upload-cert:hover,
+.view-cert:hover {
+  background-color: #107db8;
+}
+
+.delete-user-btn {
+  background-color: #e53935;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.delete-user-btn:hover {
+  background-color: #c62828;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 90%;
+  background-color: #ddd;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #4CAF50;
+  width: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  text-align: left;
+}
+
+.modal h2 {
+  margin-top: 0;
+  font-size: 22px;
+  color: #333;
+  text-align: center;
+}
+
+.modal .close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal .close:hover {
+  color: #000;
+}
+
+.modal-content button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.modal-content button:hover {
+  background-color: #45a049;
+}
+
+/* File List inside Modal */
+.file-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.file-list li {
+  margin-bottom: 10px;
+  background: #f8f9fa;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.file-list li:hover {
+  background: #e2e6ea;
+}
+
+.file-list a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.file-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.file-button, #cert {
+  display: inline-block;
+  background-color: #118fd2;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  text-decoration: none !important;
+}
+
+.file-button:hover {
+  background-color: #0e7db8;
+}
+
+#cert:hover {
+  background-color: #0e7db8;
+}
+
+#address {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#address:focus {
+  border-color: #00897b;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 137, 123, 0.3);
+}
+
+.address {
+  width: 100%;
+  padding: 0 10px 20px;
+}
+
+.address h1 {
+  font-size: 22px;
+  color: #00897b;
+  margin-bottom: 10px;
+}
+#submitAddressBtn {
+  background-color: #00897b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#submitAddressBtn:hover {
+  background-color: #007265;
+  box-shadow: 0 4px 10px rgba(0, 137, 123, 0.3);
+}
+
+.modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+      position: relative;
+    }
+
+    .modal .close {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    button {
+      --button_radius: 0.5em;
+      --button_color: #00897b;
+      --button_outline_color: #00897b;
+      font-size: 14px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      border-radius: var(--button_radius);
+      background: var(--button_color);
+      color: white;
+      padding: 0.5em 1.2em;
+      transition: transform 0.1s ease;
+    }
+
+    .btn {
+      display: inline-block;
+      border: 2px solid var(--button_outline_color);
+      border-radius: var(--button_radius);
+      background: var(--button_color);
+      color: white;
+      font-size: 14px;
+      padding: 0.5em 1em;
+      transform: translateY(-0.2em);
+      transition: transform 0.1s ease;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .btn:hover {
+      transform: translateY(-0.33em);
+    }
+
+    button:active,
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    .btn-view {
+      background-color: #007bff;
+    }
+
+    .btn-upload,
+    #submitAddressBtn {
+      background-color: #28a745;
+    }
+
+    .btn-remove {
+      background-color: #dc3545;
+    }
+
+    .btn-remove:hover {
+      background-color: #9a0e1c;
+    }
+
+    .btn-confirm {
+      background-color: #28a745;
+    }
+
+    .btn-cancel {
+      background-color: #6c757d;
+    }
+    
+    /* Sidebar buttons */
+.sidebar button:hover {
+  background-color: #00332d; /* Already darker version of #004d40 */
+}
+
+/* Logout button (white background, teal text) */
+#logoutBtn:hover {
+  background-color: #f2f2f2;
+  color: #00695c;
+}
+
+/* Add User Button */
+#addUserBtn:hover {
+  background-color: #388e3c; /* Darker than #4CAF50 */
+}
+
+/* Upload & View Certificate */
+.upload-cert:hover,
+.view-cert:hover {
+  background-color: #0e7db8; /* Already correctly darker than #118fd2 */
+}
+
+/* Delete Button */
+.delete-user-btn:hover {
+  background-color: #c62828; /* Already correctly darker than #e53935 */
+}
+
+/* Modal Submit Button */
+.modal-content button:hover {
+  background-color: #388e3c; /* Darker than #4CAF50 */
+}
+
+/* File Download Button and #cert */
+.file-button:hover,
+#cert:hover {
+  background-color: #0e7db8; /* Already darker than #118fd2 */
+}
+
+/* Address Submit Button */
+#submitAddressBtn:hover {
+  background-color: #007265; /* Already darker than #00897b */
+}
+
+/* Generic .btn variants */
+.btn-view:hover {
+  background-color: #0062cc; /* Darker than #007bff */
+}
+
+.btn-upload:hover {
+  background-color: #0f7ab6; /* Darker than #118fd2 */
+}
+
+.btn-remove:hover {
+  background-color: #b71c1c; /* Darker than #dc3545 */
+}
+
+.btn-confirm:hover {
+  background-color: #218838; /* Darker than #28a745 */
+}
+
+.btn-cancel:hover {
+  background-color: #5a6268; /* Darker than #6c757d */
+}
+
+.btn:hover {
+  background-color: #007265; /* For generic .btn with #00897b */
+}
+
+.container {
+  flex: 1;
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.student-list {
+  flex: 1;
+}
+
+.pagination-wrapper {
+  padding: 20px 0;
+  text-align: center;
+      background-color: #ffffff;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 8px 12px;
+  background: #00897b;
+  color: white;
+  margin: 0 4px;
+}
+
+
+.btn-upload {
+  background-color: #118fd2;
+}
+
+.btn-remove {
+  background-color: #e53935;
+}
+
+  .custom-file-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-file-modal.show {
+    display: flex;
+  }
+
+  .custom-file-modal-content {
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    max-width: 1200px;
+    max-height: 900px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  }
+
+  #pdfViewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: white;
+  }
+
+  .custom-file-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+    background: transparent;
+    border: none;
+    line-height: 1;
+    user-select: none;
+    padding: 4px 8px;
+    transition: color 0.3s ease;
+  }
+
+  .custom-file-modal-close:hover,
+  .custom-file-modal-close:focus {
+    color: #ff4c4c;
+    outline: none;
+  }
+.sidebar {
+    width: 220px;
+    background-color: #00897b; /* Teal tone */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 8px 8px 0;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
